@@ -1,0 +1,155 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+body,
+button,
+div,
+footer,
+form,
+h1,
+h2,
+h3,
+header,
+html,
+img,
+input,
+label,
+li,
+nav,
+p,
+select,
+span,
+table,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+body,
+html {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a,
+img,
+picture,
+svg,
+video {
+  display: block;
+}
+
+html {
+  background-color: $black;
+  color: $white;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: $h1;
+  color: $white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: $h2;
+  color: $white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: $h3;
+  font-weight: 400;
+  color: $white;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: $p;
+  font-weight: 400;
+  color: $white;
+}
+
+.bold,
+strong {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 520px) {
+  h1 {
+    font-size: $h1Mobile;
+  }
+
+  h2 {
+    font-size: $h2Mobile;
+  }
+
+  h3 {
+    font-size: $h3Mobile;
+  }
+
+  p {
+    font-size: $pMobile;
+  }
+}
