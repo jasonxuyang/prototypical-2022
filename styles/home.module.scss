@@ -516,14 +516,14 @@
       position: relative;
       margin-top: $m128Mobile;
       padding-top: $m128Mobile;
-      height: view-width(2400);
+      height: view-width(2600);
       display: flex;
       flex-direction: column;
 
       h2 {
         width: column-width-mobile(4);
         margin-left: $columnGutterMobile;
-        margin-top: view-width-moble(440);
+        margin-top: view-width-mobile(100);
       }
 
       p {
@@ -540,7 +540,7 @@
 
       .img_1 {
         left: column-width-mobile(2) + $columnGutterMobile * 2;
-        top: view-width-mobile(440);
+        top: view-width-mobile(480);
         width: column-width-mobile(2);
       }
 
@@ -552,7 +552,7 @@
 
       .img_3 {
         left: $columnGutterMobile;
-        top: view-width-mobile(440);
+        top: view-width-mobile(480);
         width: column-width-mobile(2);
       }
     }
