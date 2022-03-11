@@ -483,16 +483,15 @@
       position: relative;
       align-items: flex-start;
       justify-content: center;
-      height: 100vh;
       padding-left: $columnGutterMobile;
 
       img {
-        position: absolute;
-        top: $m24Mobile;
+        margin-top: $m24Mobile;
         width: column-width-mobile(2);
       }
 
       h1 {
+        margin-top: $m32Mobile;
         margin-bottom: $m16Mobile;
         font-size: 20vw;
         width: column-width-mobile(4);
@@ -505,8 +504,6 @@
       }
 
       .button {
-        position: absolute;
-        bottom: $m32Mobile;
         margin-top: $m32Mobile;
         padding: $m12Mobile $m24Mobile;
         width: column-width-mobile(4);
