@@ -106,8 +106,10 @@ export default function Home() {
 
     if (sectionHero.current.getBoundingClientRect().bottom <= 0) {
       nav.current.style.opacity = 1;
+      nav.current.style.pointerEvents = "auto";
     } else {
       nav.current.style.opacity = 0;
+      nav.current.style.pointerEvents = "none";
     }
 
     fadeElements.current.forEach((element) => {
