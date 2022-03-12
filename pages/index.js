@@ -275,13 +275,15 @@ export default function Home() {
       <div id={styles.cursor} ref={cursor}></div>
       <nav id={styles.navigation} ref={nav}>
         <a
-          href="#register"
+          href="https://forms.gle/oTx5TY77MA9fqPGY9"
           onMouseEnter={() => {
             cursorEnter();
           }}
           onMouseLeave={() => {
             cursorLeave();
           }}
+          rel="noreferrer"
+          target="_blank"
         >
           <p>Register</p>
         </a>
@@ -361,7 +363,7 @@ export default function Home() {
           <img
             className={`${styles.icon}`}
             src="/icon/prototypical_logo.svg"
-            alt="alt"
+            alt="prototypical logo"
           />
           <h1>
             <strong>THINK OUTSIDE THE BOX</strong>
@@ -374,7 +376,7 @@ export default function Home() {
             </p>
             <a
               className={styles.button}
-              href="/home"
+              href="https://forms.gle/oTx5TY77MA9fqPGY9"
               ref={sectionReadyButton}
               onMouseEnter={() => {
                 cursorEnter();
@@ -382,6 +384,8 @@ export default function Home() {
               onMouseLeave={() => {
                 cursorLeave();
               }}
+              rel="noreferrer"
+              target="_blank"
             >
               <p>
                 <strong>REGISTER</strong>
@@ -401,26 +405,26 @@ export default function Home() {
           </p>
           <img
             className={`${styles.img_0}`}
-            src="/img/section-about-img-0.png"
-            alt="alt"
+            src="/img/dragonhead.jpeg"
+            alt="dragon head"
             ref={sectionAboutImg0}
           />
           <img
             className={`${styles.img_1}`}
-            src="/img/section-about-img-1.png"
-            alt="alt"
+            src="/img/gluegun.png"
+            alt="glue gun"
             ref={sectionAboutImg1}
           />
           <img
             className={`${styles.img_2}`}
-            src="/img/section-about-img-2.png"
-            alt="alt"
+            src="/img/cutting.png"
+            alt="cutting"
             ref={sectionAboutImg2}
           />
           <img
             className={`${styles.img_3}`}
-            src="/img/section-about-img-3.png"
-            alt="alt"
+            src="/img/gator.png"
+            alt="gator"
             ref={sectionAboutImg3}
           />
         </section>
@@ -439,14 +443,14 @@ export default function Home() {
           <div className={styles.images}>
             <img
               className={`${styles.img_0}`}
-              src="/img/section-love-img-0.png"
-              alt="alt"
+              src="/img/bts.jpeg"
+              alt="bts"
               ref={sectionLoveImg0}
             />
             <img
               className={`${styles.img_1}`}
-              src="/img/section-love-img-1.png"
-              alt="alt"
+              src="/img/gears.jpeg"
+              alt="gears"
               ref={sectionLoveImg1}
             />
           </div>
@@ -465,14 +469,14 @@ export default function Home() {
           <div className={styles.images}>
             <img
               className={`${styles.img_0}`}
-              src="/img/section-quick-img-0.png"
-              alt="alt"
+              src="/img/lamp.jpeg"
+              alt="lamp"
               ref={sectionQuickImg0}
             />
             <img
               className={`${styles.img_1}`}
               src="/img/section-quick-img-1.png"
-              alt="alt"
+              alt="pong"
               ref={sectionQuickImg1}
             />
           </div>
@@ -481,8 +485,8 @@ export default function Home() {
         <section id={styles.section_stats}>
           <img
             className={`${styles.img_0}`}
-            src="/img/section-stats-img-0.png"
-            alt="alt"
+            src="/img/chair.jpeg"
+            alt="chair"
             ref={sectionStatsImg0}
           />
           <div className={styles.content}>
@@ -510,7 +514,7 @@ export default function Home() {
               <img
                 className={`${styles.icon_box}`}
                 src="/icon/box.svg"
-                alt="alt"
+                alt="box icon"
               />
               <p>
                 <strong>CARDBOARD</strong>
@@ -525,7 +529,7 @@ export default function Home() {
               <img
                 className={`${styles.icon_needle}`}
                 src="/icon/needle.svg"
-                alt="alt"
+                alt="needle icon"
               />
               <p>
                 <strong>TEXTILES</strong>
@@ -834,7 +838,7 @@ export default function Home() {
           </h3>
           <a
             className={styles.button}
-            href="/home"
+            href="https://forms.gle/oTx5TY77MA9fqPGY9"
             ref={sectionReadyButton}
             onMouseEnter={() => {
               cursorEnter();
@@ -842,6 +846,8 @@ export default function Home() {
             onMouseLeave={() => {
               cursorLeave();
             }}
+            rel="noreferrer"
+            target="_blank"
           >
             <p>
               <strong>REGISTER</strong>
