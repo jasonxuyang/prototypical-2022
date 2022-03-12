@@ -30,6 +30,7 @@ export default function Home() {
   const sectionLoveBody = createRef();
   const sectionQuickHeader = createRef();
   const sectionQuickBody = createRef();
+
   const sectionStatsItem1 = createRef();
   const sectionStatsItem2 = createRef();
   const sectionStatsItem3 = createRef();
@@ -275,17 +276,18 @@ export default function Home() {
       <div id={styles.cursor} ref={cursor}></div>
       <nav id={styles.navigation} ref={nav}>
         <a
-          href="https://forms.gle/oTx5TY77MA9fqPGY9"
+          href="#home"
+          onClick={() => {
+            scrollTo(sectionHero);
+          }}
           onMouseEnter={() => {
             cursorEnter();
           }}
           onMouseLeave={() => {
             cursorLeave();
           }}
-          rel="noreferrer"
-          target="_blank"
         >
-          <p>Register</p>
+          <p>Home</p>
         </a>
         <a
           href="#about"
@@ -357,7 +359,24 @@ export default function Home() {
         >
           <p>FAQ</p>
         </a>
+        <a
+          id={styles.fab}
+          href="https://forms.gle/oTx5TY77MA9fqPGY9"
+          onMouseEnter={() => {
+            cursorEnter();
+          }}
+          onMouseLeave={() => {
+            cursorLeave();
+          }}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <p>
+            <strong>REGISTER</strong>
+          </p>
+        </a>
       </nav>
+
       <main className={styles.home_container} ref={main}>
         <section id={styles.section_hero} ref={sectionHero}>
           <img
@@ -377,7 +396,6 @@ export default function Home() {
             <a
               className={styles.button}
               href="https://forms.gle/oTx5TY77MA9fqPGY9"
-              ref={sectionReadyButton}
               onMouseEnter={() => {
                 cursorEnter();
               }}
@@ -462,8 +480,21 @@ export default function Home() {
               a QUICK Look at <strong>Prototypical 2021</strong>
             </h2>
             <p ref={sectionQuickBody}>
-              Take a look at last year&apos;s Prototypical. (It&apos;ll be even
-              more awesome this year!)
+              Take a look at{" "}
+              <a
+                href="https://prototypical.devpost.com"
+                target="_blank"
+                rel="noreferrer"
+                onMouseEnter={() => {
+                  cursorEnter();
+                }}
+                onMouseLeave={() => {
+                  cursorLeave();
+                }}
+              >
+                last year&apos;s Prototypical
+              </a>
+              . (It&apos;ll be even more awesome this year!)
             </p>
           </div>
           <div className={styles.images}>
@@ -559,13 +590,13 @@ export default function Home() {
                 </div>
                 <div className={styles.schedule_item}>
                   <p>
-                    <strong>6:00PM - 6:30PM</strong>
+                    <strong>5:30PM - 6:00PM</strong>
                   </p>
                   <p>Opening Ceremony</p>
                 </div>
                 <div className={styles.schedule_item}>
                   <p>
-                    <strong>6:30PM - 7:00PM</strong>
+                    <strong>6:00PM - 6:30PM</strong>
                   </p>
                   <p>Ideation Workshop</p>
                 </div>
@@ -583,13 +614,13 @@ export default function Home() {
                 </div>
                 <div className={styles.schedule_item}>
                   <p>
-                    <strong>8:00PM - 8:30PM</strong>
+                    <strong>8:00PM - 8:45PM</strong>
                   </p>
-                  <p>Workshop 1 &amp; 2</p>
+                  <p>Prototyping Workshops 1 + 2</p>
                 </div>
                 <div className={styles.schedule_item}>
                   <p>
-                    <strong>9:00PM - 10:00PM</strong>
+                    <strong>9:00PM - 9:30PM</strong>
                   </p>
                   <p>Workshop 3</p>
                 </div>
